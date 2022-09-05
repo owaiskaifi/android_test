@@ -3,6 +3,8 @@ version: 0.2
 phases:
   build:
     commands:
+     - sudo chmod -R 0777 /opt/android-sdk
+     - yes | ~/Android/Sdk/tools/bin/sdkmanager --licenses
       - chmod +x gradlew
       - ./gradlew assembleDebug
 artifacts:
