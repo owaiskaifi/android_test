@@ -8,4 +8,5 @@ phases:
       - ./gradlew assembleDebug
 artifacts:
   files:
-    - app/ 
+    - ./app/**
+   
